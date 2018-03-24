@@ -1,0 +1,158 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: roboto;
+}
+.landing {
+    height: 830px;
+    background: url('bg.jpg');
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+.overlay {
+    background-image: linear-gradient(to bottom right rgb(0, 51, 120), rgb(0, 51, 120));
+    z-index: 1000;
+}
+.text {
+    position: absolute;
+}
+.group {
+    align-content: center;
+    font-size: 100px;
+    padding-top: 200px;
+}
+.first {
+    display: block;
+    padding: 10px;
+    height: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+    background: url('nodelogotrimmed.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-y: 200px;
+    background-position-x: 100px;
+    background-attachment: scroll;
+}
+.second {
+    height: 800px;
+}
+.badge {
+    display: inline-block;
+    margin: 10px;
+    height: 100px;
+    font-family: bebas;
+    color: goldenrod;
+    width: 270px;
+    background: green;
+    border-radius: 7px;
+    line-height: 50px;
+    border: goldenrod 4px solid;
+    font-size: 20px;
+}
+.badge1 {
+    display: inline-block;
+    margin: 20px;
+    height: 100px;
+    width: 270px;
+    font-family: bebas;
+    color: goldenrod;
+    background: green;
+    border-radius: 7px;
+    border: goldenrod 4px solid;
+    line-height: 50px;
+    font-size: 20px;
+}
+/*.circ1 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 300px;
+    margin-top: 180px;
+    position: absolute;
+    animation: appear 2s ease-in-out 200ms;
+}
+.lin1 {
+    background: #8cc63f;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotate(30deg);
+    margin-top: 300px;
+    margin-left: 430px;
+    opacity: 0;
+    animation: line 1s linear 2s forwards;
+}
+.circ2 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 460px;
+    margin-top: 270px;
+    position: absolute;
+    animation: appear 2s ease-in-out 300ms;
+}
+.lin2 {
+    background: #8cc63f;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotate(-40deg);
+    margin-top: 300px;
+    margin-left: 590px;
+    opacity: 0;
+    animation: line 1s linear 2.2s forwards;
+}
+
+.circ3 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 620px;
+    margin-top: 180px;
+    position: absolute;
+    animation: appear 2s ease-in-out 400ms;
+}
+.lin3 {
+    background: #8cc63f;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotate(30deg);
+    margin-top: 300px;
+    margin-left: 740px;
+    opacity: 0;
+    animation: line 1s linear 2.4s forwards;
+}
+.circ4 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 780px;
+    margin-top: 270px;
+    position: absolute;
+    animation: appear 2s ease-in-out 500ms;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes line {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+*/
