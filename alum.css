@@ -7,10 +7,10 @@ body {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 .card1 {
-    background: #dcdcdc;
+    background: white;
     height: 230px;
     width: 620px;
-    border-bottom: 4px solid #8cc63f;
+   /* border-bottom: 4px solid #8cc63f; */
     display: inline-block;
     flex-wrap: wrap;
     margin: 20px;
@@ -20,7 +20,7 @@ body {
     height: 140px;
     width: 140px;
     border-radius: 100px;
-    background: grey;
+    background: white;
     position: absolute;
     margin-left: 25px;
     background: url('one.jpg');
