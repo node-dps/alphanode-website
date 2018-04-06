@@ -9,6 +9,7 @@ body {
 .card1 {
     background: white;
     height: 230px;
+    border-radius: 1%;
     width: 620px;
    /* border-bottom: 4px solid #8cc63f; */
     display: inline-block;
