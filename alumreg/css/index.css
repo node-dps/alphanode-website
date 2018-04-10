@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+}
+.node{
+	margin-top: 2%;
+	height: 10%;
+	width: 10%;
+}
+.sastamenu{
+
+}
+.nde{
+
+	transform: translateY(-100%);
+	text-align: right;
+}
+.container{
+
+}
+a{
+	color: black;
+	transition: all ease 0.4s;
+	border-bottom: solid 2px white;
+}
+a:hover{
+	border-bottom: solid 2px black;
+}
+.form{
+background-color: rgba(0,0,0,0)
+}
+}
