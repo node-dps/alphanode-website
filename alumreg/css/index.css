@@ -36,3 +36,76 @@ background-color: rgba(0,0,0,0)
 }.theplus{
 
 }
+.input-field label {
+     color: #003366;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #003366;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #003366;
+     box-shadow: 0 1px 0 0 #003366;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #003366;
+     box-shadow: 0 1px 0 0 #003366;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #003366;
+     box-shadow: 0 1px 0 0 #003366;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #003366;
+   }
+   .ff{
+   	margin-top: 10%;
+   	margin-right: 5%;}
+
+
+   	.foot{
+font-family: "roboto";
+
+   		font-size: 1em;
+   		padding-top: 5%;
+   		color: rgba(255,255,255,0.7);
+   		margin-top: 10%;
+   		min-width: 100vw;
+   		max-width: 100vw;
+   		background-color: rgb(41,62,82);
+   	}
+ .rb{
+ 	
+    opacity: .7;
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    color: rgb(41,62,82);
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.1em;
+    margin-right: 30px;
+    border-radius: 50px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+ 	 .gt{
+ 	 	font-size: 3em;
+ 	 	color: white;
+ 	 }
+ 	 .contact1{
+ 	 	font-size: 2em;
+ 	 	color: white;
+ 	 }
+ 	 small{
+ 	 	font-size: 0.5em;
+ 	 }
+ 	 .mail{
+ 	 	transition: all ease 0.4s;
+ 	 	color: rgb(41,62,82);
+ 	 	border-bottom: dotted 2px #003366;
+ 	 }
