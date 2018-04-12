@@ -5,6 +5,13 @@ body {
     background-attachment: fixed;
     background-position-y: -100px;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 300vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
 }
 .card1 {
     background: #dcdcdc;
@@ -15,6 +22,7 @@ body {
     flex-wrap: wrap;
     margin: 20px;
     overflow: hidden;
+    border-radius: 7px;
 }
 .pic1 {
     height: 140px;
@@ -72,6 +80,50 @@ body {
     background-size: cover;
     margin-top: 50px;
 }
+.pic6 {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    background: grey;
+    position: absolute;
+    margin-left: 25px;
+    background: url('six.jpg');
+    background-size: cover;
+    margin-top: 50px;
+}
+.pic7 {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    background: grey;
+    position: absolute;
+    margin-left: 25px;
+    background: url('seven.jpg');
+    background-size: cover;
+    margin-top: 50px;
+}
+.pic8 {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    background: grey;
+    position: absolute;
+    margin-left: 25px;
+    background: url('eight.jpg');
+    background-size: cover;
+    margin-top: 50px;
+}
+.pic10 {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    background: grey;
+    position: absolute;
+    margin-left: 25px;
+    background: url('ten.jpg');
+    background-size: cover;
+    margin-top: 50px;
+}
 h1 {
     color: white;
 }
@@ -86,6 +138,12 @@ h1 {
 }
 .container {
     padding: 50px;
+    overflow: scroll;
+    background: url('dps.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -100px;
 }
 p:not(.p2) {
     position: absolute;
