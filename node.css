@@ -1,0 +1,276 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: roboto;
+    overflow-x: hidden;
+}
+* {
+    transition: all ease 0.4s;
+}
+ body::-webkit-scrollbar-thumb {
+  background-color: blue;
+}
+.alpha {
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 80vh;
+}
+.landing {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1000;
+    margin: 0;
+    padding: 0;
+    background: #003366;
+    background-attachment: scroll;
+    background-position: 0 0;
+    animation: animate 30s linear infinite forwards;
+}
+#vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%
+    }
+}
+.overlay {
+    background-image: linear-gradient(to bottom right rgb(0, 51, 120), rgb(0, 51, 120));
+    z-index: 1000;
+}
+.text {
+    position: absolute;
+}
+.group {
+    align-content: center;
+    font-size: 100px;
+}
+#exc {
+    margin-left: 575px;
+    position: relative;
+}
+.first {
+    display: block;
+    padding: 10px;
+    height: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+    background: url('nodelogotrimmed.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 10%;
+    background-attachment: scroll;
+}
+.second {
+    height: 110vh;
+    padding: 20px;
+    background: lightblue;
+    overflow: scroll;
+}
+.badge {
+    display: inline-block;
+    margin: 10px;
+    height: 80px;
+    font-family: bebas;
+    color: goldenrod;
+    width: 270px;
+    background: green;
+    border-radius: 7px;
+    line-height: 23px;
+    border: goldenrod 4px solid;
+    font-size: 22px;
+    filter: grayscale;
+}
+.badge:hover {
+    filter: none;
+}
+.badge1 {
+    display: inline-block;
+    margin: 20px;
+    height: 80px;
+    width: 270px;
+    font-family: bebas;
+    color: goldenrod;
+    background: green;
+    border-radius: 7px;
+    border: goldenrod 4px solid;
+    line-height: 23px;
+    font-size: 20px;
+}
+span {
+    color: goldenrod;
+}
+.badge2 {
+    display: inline-block;
+    margin: 20px;
+    height: 80px;
+    width: 220px;
+    font-family: bebas;
+    color: goldenrod;
+    background: #003366;
+    border-radius: 7px;
+    border: goldenrod 3px solid;
+    line-height: 23px;
+    font-size: 20px;
+}
+.line {
+    width: 2px;
+    background: goldenrod;
+    height: 80px;
+    position: absolute;
+    margin-left: 80px;
+}
+.content1 {
+    margin-left: 50%;
+    margin-right: 10%;
+    margin-top: 8%;
+    font-size: 25px;
+}
+.footer {
+    height: 200px;
+    background: #003366;
+    background-attachment: fixed;
+    padding: 100px;
+    font-size: 50px;
+}
+#diffs {
+    background: rebeccapurple;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 1;
+}
+.alpha {
+    border: 1px solid #003366;
+    border-radius: 10px;
+    background: #8cc63f;
+    height: 20px;
+    width: 120px; 
+    padding: 10px;;
+    z-index:100;
+    display: block;
+    color: white;
+    opacity: 0.7;
+    top: 10%;
+}
+.alpha:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.p1 {
+    display: inline-block;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 650px), (max-height: 400px) {
+    .content1 {
+        font-size: 16px;
+    }
+    .first {
+        height: 300px;
+    }
+}
+    
+    
+/*.circ1 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 300px;
+    margin-top: 180px;
+    position: absolute;
+    animation: appear 2s ease-in-out 200ms;
+}
+.lin1 {
+    background: #8cc63f;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotate(30deg);
+    margin-top: 300px;
+    margin-left: 430px;
+    opacity: 0;
+    animation: line 1s linear 2s forwards;
+}
+.circ2 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 460px;
+    margin-top: 270px;
+    position: absolute;
+    animation: appear 2s ease-in-out 300ms;
+}
+.lin2 {
+    background: #8cc63f;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotate(-40deg);
+    margin-top: 300px;
+    margin-left: 590px;
+    opacity: 0;
+    animation: line 1s linear 2.2s forwards;
+}
+
+.circ3 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 620px;
+    margin-top: 180px;
+    position: absolute;
+    animation: appear 2s ease-in-out 400ms;
+}
+.lin3 {
+    background: #8cc63f;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotate(30deg);
+    margin-top: 300px;
+    margin-left: 740px;
+    opacity: 0;
+    animation: line 1s linear 2.4s forwards;
+}
+.circ4 {
+    background: #8cc63f;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 780px;
+    margin-top: 270px;
+    position: absolute;
+    animation: appear 2s ease-in-out 500ms;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes line {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+*/
