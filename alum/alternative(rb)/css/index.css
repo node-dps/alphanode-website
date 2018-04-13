@@ -1,0 +1,45 @@
+body{
+	
+}
+.node{
+	margin-top: 2%;
+	height: 10%;
+	width: 10%;
+}
+.sastamenu{
+
+}
+a{
+	color: black;
+	transition: all ease 0.4s;
+	border-bottom: solid 2px white;
+}
+a:hover{
+	border-bottom: solid 2px black;
+}
+.nde{
+transform: translateY(-100%);
+	text-align: right;
+}
+.alpha{
+	height: 4%;
+	width: 4%;
+}
+.nde{
+
+	transform: translateY(-100%);
+	text-align: right;
+}
+small{
+	transform: translateY(-100%;);
+}
+.alumpix{
+	height: 4rem;
+	border-radius: 50%;
+}
+.alumname{
+	transform: translate3d(20%,-250%,0);
+}
+.details{
+height: 4rem;
+    vertical-align: middle; }
