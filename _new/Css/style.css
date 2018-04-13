@@ -34,6 +34,7 @@ body{
 
 #particles-js{
     background: #003366;
+    background-attachment: fixed;
     height: 100vh;
 }
 .image {
@@ -44,7 +45,6 @@ body{
     background-repeat: no-repeat;
     margin-bottom: 0;
     align-content: center;
-    justify: center;
     margin-top: -5%;
 }
 .cont {
