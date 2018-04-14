@@ -211,32 +211,3 @@ a:hover {
     width: auto;
     cursor: pointer;
 }
-.node{
-    margin-top: 2%;
-    height: 10%;
-    width: 10%;
-}
-.sastamenu{
-
-}
-.nde{
-
-    transform: translateY(-200%);
-    text-align: right;
-}
-.container{
-
-}
-a{
-    color: white;
-    transition: all ease 0.4s;
-    border-bottom: solid 2px rgb(0,51,102);
-}
-a:hover{
-    border-bottom: solid 2px white;
-}
-
-.alph{
-    height: 4%;
-    width: 4%;
-}
