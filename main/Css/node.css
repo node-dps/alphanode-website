@@ -2,7 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Abel;
-    font-family: "Champagne & Limousines";
+    font-family: "Abel";
     overflow-x: hidden;
 }
 * {
@@ -91,6 +91,7 @@ body {
     line-height: 23px;
     border-bottom: #8cc63f 4px solid;
     font-size: 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
 }
 .wow {
     margin-top: 15%;
@@ -99,12 +100,17 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 100px;
-    background: url('nig1.png');
+    background: black;
     background-size: contain;
     background-position: center;
     position: relative;
     margin-top: 15%;
     transform: scale(1.2);
+}
+#zero {
+    background: url('nig1.png');
+    background-size: contain;
+    background-position: center;
 }
 #one {
     background: url('nig2.png');
@@ -156,14 +162,14 @@ body {
     background-size: 115%;
 }
 #eight {
-    background: url('nig2.png');
+    background: url('nig7.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
 }
 #nine {
-    background: url('nig2.png');
+    background: black;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -182,6 +188,7 @@ body {
     border-bottom: #8cc63f 4px solid;
     line-height: 23px;
     font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
 }
 span {
     color: goldenrod;
@@ -196,6 +203,10 @@ span {
     border-bottom: white 3px solid;
     line-height: 23px;
     font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
+}
+#yellow {
+    border-bottom: goldenrod 3px solid;
 }
 .line {
     width: 2px;
@@ -207,15 +218,20 @@ span {
 .content1 {
     margin-left: 50%;
     margin-right: 10%;
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 25px;
 }
 .footer {
-    height: 200px;
-    background: black;
+    height: 2.5vh;
+    background: white;
+    color: #003366;
     background-attachment: fixed;
     padding: 5%;
-    font-size: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer span {
+    color: #8cc63f;
 }
 #diffs {
     background: rebeccapurple;
