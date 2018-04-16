@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: #003366;
     overflow-x: hidden;
-    font-family: "Champagne & Limousines";
+    font-family: "Abel";
 }
 a {
     text-decoration: none;
@@ -108,7 +108,7 @@ path {
     padding: 0%;
     color: white;
     align-content: center;
-    height: 50px;
+    height: 83px;
 }
 .nav-item {
     color: ghostwhite;

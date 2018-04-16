@@ -169,11 +169,18 @@ body {
     background-size: 100%;
 }
 #nine {
-    background: black;
+    background: url('nig8.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
+}
+#ten {
+    background: url('nig9.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
 }
 .badge:hover {
     filter: none;
