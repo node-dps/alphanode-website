@@ -8,9 +8,6 @@ body {
 * {
     transition: all ease 0.4s;
 }
- body::-webkit-scrollbar-thumb {
-  background-color: blue;
-}
 .alpha {
     position: absolute;
     margin-top: 60vh;
@@ -75,6 +72,7 @@ body {
     height: auto;
     padding: 20px;
     background: #003366;
+    padding-bottom: 5%;
 }
 .white {
     color: white;
@@ -228,7 +226,7 @@ span {
     font-size: 25px;
 }
 .footer {
-    height: 2.5vh;
+    height: auto;
     background: white;
     color: #003366;
     background-attachment: fixed;
@@ -288,9 +286,6 @@ a:hover {
         font-size: 30px;
     }
 }
-@media only screen and (max-width: 480px) {
-    
-}
 .nav {
     padding: 0%;
     color: white;
@@ -313,4 +308,20 @@ a:hover {
 }
 .resize {
     font-size: 30px;
+}
+@media only screen and (max-width: 480px) {
+    .content1 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .first h1 {
+        font-size: 30px;
+    }
+    .nav-item {
+        font-size: 17.78px;
+        padding: 2%;
+    }
+    .first {
+        background-position-y: 65%;
+    }
 }

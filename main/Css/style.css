@@ -37,7 +37,7 @@ body{
     background: url('nodelogotrimmed.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 0;
+    margin-bottom: -2%;
     align-content: center;
     margin-top: -5%;
 }
@@ -55,4 +55,25 @@ body{
 }
 .resize {
     font-size: 50px;
+}
+@media only screen and (max-width: 480px) {
+    .image {
+        transform: scale(0.5);
+        align-self: center;
+        margin-top: -15%;
+        margin-left: -7%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .content1 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .first h1 {
+        font-size: 30px;
+    }
+    .nav-item {
+        font-size: 10px;
+        padding: 1%;
+    }
 }
