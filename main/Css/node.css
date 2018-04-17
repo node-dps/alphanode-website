@@ -72,10 +72,9 @@ body {
     background-attachment: scroll;
 }
 .second {
-    height: 110vh;
+    height: auto;
     padding: 20px;
     background: #003366;
-    overflow: scroll;
 }
 .white {
     color: white;
