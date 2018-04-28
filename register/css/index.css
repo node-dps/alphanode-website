@@ -28,3 +28,32 @@ padding-top: 0;
 	color: #D3D3D3;
 	font-size: 0.4em;
 }
+.node{
+    margin-top: 2%;
+    height: 10%;
+    width: 10%;
+}
+.sastamenu{
+
+}
+.nde{
+
+    transform: translateY(-200%);
+    text-align: right;
+}
+.container{
+
+}
+a{
+    color: white;
+    transition: all ease 0.4s;
+    border-bottom: solid 2px rgba(0,0,0,0);
+}
+a:hover{
+    border-bottom: solid 2px white;
+}
+
+.alpha{
+    height: 4%;
+    width: 4%;
+}
