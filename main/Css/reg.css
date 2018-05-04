@@ -105,7 +105,7 @@ input[type=reset], input[type=submit] {
     cursor: pointer;
     text-decoration: none;
     border:none;
-    margin-left: 50%;
+    align-self: center;
 }
 input[type=reset]:hover, input[type=submit]:hover {
     background-color: #003366;
@@ -125,3 +125,30 @@ input[type=email] {
 #font {
     text-align: left;
 }
+.nav .icon {
+    display: none;
+    color: #284360;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+      color: #fff;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

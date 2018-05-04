@@ -10,13 +10,14 @@
 </head>
 <body>
 	<div class = "contain">
-					<div class = "nav">
+					<div class = "nav" id = "Topnav">
 						<a class = "nav-item" href = "index.html">Node</a>
 						<a class = "nav-item" id = "active" href = "alpha.html">Alphanode</a>
 						<a class = "nav-item" href = "index.html">DecodeNode</a>
 						<a class = "nav-item" href = "alum.html">Alumni</a>
 						<a class = "nav-item" href = "index.html">Updates</a>
 						<a class = "nav-item" href = "register.html">Join Us</a>
+						<a href="javascript:void(0);" style="font-size:30px;margin-right:2%;" class="icon" onclick="myFunction()">&#9776;</a>
 					</div>
     <div class = "land">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -184,8 +185,9 @@
 <div class = "footer">
 Get in Touch: 
 <br><br>
-	Nishant Tripathi: +91-9717822950<br>
-	Shubhankar Singh: +91-987345569
+	Nishant Tripathi: +91 9717822950<br>
+	Shubhankar Singh: +91 987345569<br>
+	Rahul Batra: +91 7042826803
 </div>
 <script>
 	var acc = document.getElementsByClassName("accordion");
@@ -201,6 +203,14 @@ Get in Touch:
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
+}
+function myFunction() {
+    var x = document.getElementById("Topnav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+	}
 }
 </script>
 </body>

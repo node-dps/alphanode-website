@@ -180,7 +180,7 @@ path {
     font-size: 2em;
 }
 .accordion {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
     cursor: pointer;
     padding: 3%;
     font-family: "Abel";
@@ -191,11 +191,10 @@ path {
     outline: none;
     font-size: 3em;
     transition: 0.4s;
-    border-bottom: grey 2px solid;
 }
 
 .active, .accordion:hover {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
 }
 
 .accordion:after {
@@ -228,4 +227,36 @@ path {
         font-size: 1em;
     }
 }
+.nav .icon {
+    display: none;
+    color: #284360;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+      color: #fff;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
+  @media screen and (max-width: 400px) {
+        .accordion {
+            font-size: 1.7em;
+        }
+  }
