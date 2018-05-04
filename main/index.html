@@ -7,24 +7,19 @@
     <title>node</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/node.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Abel|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
 <body>
-    <script>
-        $(document).ready(function(){
-            $('.nig:eq(2)').css(background, url('nig2.png'));
-        });
-
-    </script>
 
     <div id="particles-js">
-        <div class = "nav">
-            <a class = "nav-item" href = "index.html">Node</a>
+        <div class = "nav" id = "Topnav">
+            <a class = "nav-item" id = "active" href = "index.html">Node</a>
             <a class = "nav-item" href = "alpha.html">Alphanode</a>
             <a class = "nav-item" href = "http://decode.nodeclub.xyz/leaderboard">DecodeNode</a>
             <a class = "nav-item" href = "alum.html">Alumni</a>
             <a class = "nav-item" href = "index.html">Updates</a>
             <a class = "nav-item" href = "register.html">Join Us</a>
+            <a href="javascript:void(0);" style="font-size:30px;margin-right:2%;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <div class="btext">
             <center>
@@ -60,14 +55,14 @@
                 <div class = "badge">
                     <div class = "nig" id = "zero"></div>
                     <p class = "wow">
-                    NISHANT TRIPATHI<br>
+                    <b>NISHANT TRIPATHI</b><br>
                     NODE PRESIDENT
                 </p>
                     </div>  
                 <div class = "badge">
                         <div class = "nig" id = "one"></div>
                     <p class = "wow">
-                    SHUBHANKAR SINGH<br>
+                    <b>SHUBHANKAR SINGH</b><br>
                         NODE PRESIDENT
                     </p>
                     </div>       
@@ -104,7 +99,7 @@
                                 <div class = "nig" id = "seven"></div>
                             <p class = "wow">
                             RAHUL BATRA<br>
-                            GRAPHICS  HEAD
+                            DIGITAL IMAGING  HEAD
                         </p>
                         </div>
                         <br>
@@ -147,7 +142,7 @@
                                 <div class = "badge2">
                                         <div class = "nig" id = "thirteen"></div>
                                         <p class = "wow">
-                                        JAINIL AJMERA<br>
+                                        ISHAN MANCHANDA<br>
                                         PROGRAMMING  
                                     </p>
                                     </div>                
@@ -161,7 +156,7 @@
                         <div class = "badge2">
                                 <div class = "nig" id = "fivet"></div>
                             <p class = "wow">
-                            PRAKHAR MITTAL<br>
+                            JAINIL AJMERA<br>
                             ROBOTICS SPECIALIST 
                         </p>
                         </div>  
@@ -234,7 +229,15 @@
         function(){
             console.log('particles.json loaded...')
         })
-        particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":6},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.45,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.2,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":35,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+        particlesJS("particles-js", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#fff"},"polygon":{"nb_sides":6},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.45,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.2,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":35,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+        function myFunction() {
+    var x = document.getElementById("Topnav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
 </script>
 
     </script>

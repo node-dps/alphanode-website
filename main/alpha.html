@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel = "stylesheet" href = "css/alpha.css">
-	<link href="https://fonts.googleapis.com/css?family=Dosis|Abel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <title>alphanode</title>
 </head>
 <body>
 	<div class = "contain">
 					<div class = "nav">
 						<a class = "nav-item" href = "index.html">Node</a>
-						<a class = "nav-item" href = "alpha.html">Alphanode</a>
+						<a class = "nav-item" id = "active" href = "alpha.html">Alphanode</a>
 						<a class = "nav-item" href = "index.html">DecodeNode</a>
 						<a class = "nav-item" href = "alum.html">Alumni</a>
 						<a class = "nav-item" href = "index.html">Updates</a>
@@ -62,23 +62,24 @@
 	</div>
 	<div class = "text">
 		2018
-	</div>
+		</div>
 </div>
 <div class = "events">
 	<h1 class = "first" align = "center">EVENTS</h1>
 	<br><br>
-	<div class = "info">
-		<span class = "heading">Create[X]</span>
+	<button class = "accordion">Create[X]</button>
+	<div class = "panel">
 		<p>
-				<b><em>Innovate to create and create to innovate</em></b><br>
-				Participants will be required to showcase their product through Web Design, Digital Imaging and Motion Graphics……………
-				<br><br>
-				Teams Per School : 1<br>
-				Participants : 3
-				</p>
-	</div>
-	<div class = "info">
-			<span class = "heading">Deprehendo</span>
+		<b><em>Innovate to create and create to innovate</em></b><br>
+		Participants will be required to showcase their product through Web Design, Digital Imaging and Motion Graphics……………
+		<br><br>
+		Teams Per School : 1<br>
+		Participants : 3
+		</p>
+		</div>
+		<br>
+		<button class = "accordion">Deprehendo</button>
+		<div class = "panel">
 			<p>
 			<b><em>Surprise Event</em></b><br>
 			Expect anything to everything
@@ -87,8 +88,9 @@
 			Participants : 2
 		</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">Geekathon</span>
+	<br>
+		<button class = "accordion">Geekathon</button>
+		<div class = "panel">
 			<p>
 					<b><em>Group Discussion</em></b><br>
 					Improve your argument to win
@@ -98,8 +100,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">Intellect</span>
+	<br>
+			<button class = "accordion">Intellect</button>
+			<div class = "panel">
 			<p>
 					<em><b>Senior Quiz</b></em>
 					<br><br>
@@ -108,8 +111,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">PhotoBuild</span>
+	<br>
+			<button class = "accordion">PhotoBuild</button>
+			<div class = "panel">
 			<p>
 					<b><em>Photography</em></b>
 					<br><br>
@@ -118,8 +122,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">Analogous</span>
+	<br>
+			<button class = "accordion">Analogous</button>
+			<div class = "panel">
 			<p>
 					<b><em>Gaming</em></b>
 					<br><br>
@@ -128,8 +133,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">Robotrap</span>
+	<br>
+			<button class = "accordion">Robotrap</button>
+				<div class = "panel">
 			<p>
 					<b><em>Robotics</em></b>
 					<br><br>
@@ -138,8 +144,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">CodecPro</span>
+	<br>
+			<button class = "accordion">CodecPro</button>
+			<div class = "panel">
 			<p>
 					<b><em>Competitive Programming</em></b>
 					<br><br>
@@ -148,8 +155,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">decodeNode</span>
+<br>
+			<button class = "accordion">decodeNode</button>
+			<div class = "panel">
 			<p>
 					<b><em>Cryptic Hunt</em></b>
 					<br><br>
@@ -158,8 +166,9 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">Infocus</span>
+	<br>
+			<button class = "accordion">Infocus</button>
+			<div class = "panel">
 			<p>
 					<b><em>Movie Making</em></b>
 					<br><br>
@@ -168,11 +177,31 @@
 					
 			</p>
 	</div>
-	<div class = "info">
-			<span class = "heading">M_Sway</span>
+	<br>
+			<button class = "accordion">M_Sway</button>
 	</div>
 </div>
-<div class = "footer"></div>
+<div class = "footer">
+Get in Touch: 
+<br><br>
+	Nishant Tripathi: +91-9717822950<br>
+	Shubhankar Singh: +91-987345569
+</div>
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
+	for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </body>
 </html>

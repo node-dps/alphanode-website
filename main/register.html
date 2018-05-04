@@ -15,14 +15,46 @@
                 <a class = "nav-item" href = "http://decode.nodeclub.xyz/leaderboard">DecodeNode</a>
                 <a class = "nav-item" href = "alum.html">Alumni</a>
                 <a class = "nav-item" href = "index.html">Updates</a>
-                <a class = "nav-item" href = "register.html">Join Us</a>
+                <a class = "nav-item" id = "active" href = "register.html">Join Us</a>
             </div>
     <div class = "form">
         <h1 align = "center">Want to be a part of the team ?</h1>
-        <center>
             <form>
-            </form>
-</center>
+                <br><br>
+                <label id = "font">First Name:</label>  
+                <br> 
+                <input type = "text" required> <br>
+                <label id = "font" style="text-align: left">Last Name:</label>
+                <br>
+                <input type = "text" required> <br>
+                <br>
+                <label id = "font">Gender:</label>
+                <input type = "radio" name = "r1"><label id = "font"> Male</label>    <input type = "radio" name = "r1"> <label id = "font"> Female</label>
+                <br><br>
+                <label id = "font">Designation:</label>
+                <br><br>
+                <select required>
+                    <option selected disabled>Choose Your Designation</option>
+                    <option>Student</option>
+                    <option>Professional</option>
+                    <option>Teacher</option>
+                    </select><br>
+                    <br>
+                <label id = "font">Enter Your E-mail Address:</label>
+                <br>
+                <input type = "email" required>
+                <br><br>
+                <label id = "font">Date Of Birth:</label>
+                <br>
+                <input type = "date" required>
+                <br><br>
+                <label id = "font">Mobile Number:</label>
+                <br>
+                <input type = "number" maxlength = "10" required>
+                <br><br>
+                <input type = "submit" onclick = "alert('Your request has been submitted.')">    
+                </form>
+
     </div>
 </body>
 </html>

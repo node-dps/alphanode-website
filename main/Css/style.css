@@ -5,7 +5,7 @@ body{
 }
 
 .btext{
-    color: #f9f3f4;
+    color: #ecf0f1;
     position: absolute;
     text-align: center;
     top: 40%;
@@ -27,7 +27,7 @@ body{
 }
 
 #particles-js{
-    background: #003366;
+    background: #284360;
     background-attachment: fixed;
     height: 100vh;
 }
@@ -64,7 +64,7 @@ body{
         margin-left: -7%;
     }
 }
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
     .content1 {
         font-size: 14px;
         font-weight: bold;

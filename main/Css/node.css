@@ -22,7 +22,7 @@ body {
     padding: 0;
     background: #003366;
     background: url('bg.jpg');
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: 0 0;
     animation: animate 30s linear infinite forwards;
 }
@@ -82,7 +82,7 @@ body {
     display: inline-block;
     margin: 10px;
     height: 220px;
-    color: white;
+    color: #ecf0f1;
     width: 220px;
     background: rgba(0,0,0,0.3);
     line-height: 23px;
@@ -178,6 +178,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 105%;
+}
+#eleven {
+    background: url('nig10.jpeg');
+    background-size: contain;
+    background-position: center;
 }
 .badge:hover {
     filter: none;
@@ -325,3 +330,34 @@ a:hover {
         background-position-y: 65%;
     }
 }
+#active {
+    background: white;
+    color: #003366;
+}
+.nav .icon {
+    display: none;
+    color: #284360;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+      color: #fff;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
