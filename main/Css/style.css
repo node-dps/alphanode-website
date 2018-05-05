@@ -40,6 +40,8 @@ body{
     margin-bottom: -2%;
     align-content: center;
     margin-top: -5%;
+    display: grid;
+    place-items: center;
 }
 .cont {
     display: inline-block;

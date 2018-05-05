@@ -71,7 +71,7 @@ body {
 .second {
     height: auto;
     padding: 20px;
-    background: #003366;
+    background: linear-gradient(45deg,#003366, #284360);
     padding-bottom: 5%;
 }
 .white {
@@ -183,6 +183,24 @@ body {
     background: url('nig10.jpeg');
     background-size: contain;
     background-position: center;
+}
+#twelve {
+    background: url('nig11.jpeg');
+    background-size: 120%;
+    background-position: center;
+    background-position-y: 15%;
+    background-position-x: 3%;
+}
+#fourt {
+    background: url('nig13.jpeg');
+    background-size: 120%;
+    background-position: center;
+}
+#fivet {
+    background: url('nig14.jpeg');
+    background-size: 150%;
+    background-position: center;
+    background-position-y: 8%;
 }
 .badge:hover {
     filter: none;

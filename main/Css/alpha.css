@@ -10,14 +10,14 @@ a {
     cursor: pointer;
 }
 * {
-    transition: all ease 1.2s;
+    transition: all ease 0.4s;
 }
 .contain {
     height: 100vh;
     width: 100%;
-    background: url('alpha.jpg');
+    background: url('maclab.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .land {
@@ -52,7 +52,7 @@ path {
 .text {
     color: #8cc63f;
     font-size: 100px;
-    font-family: Caviar dreams;
+    font-family: "Abel";
     font-weight: bold;
     position: absolute;
     top: 62%;
@@ -137,9 +137,10 @@ path {
 
 .events {
     display: block;
-    padding: 20%;
+    padding: 15%;
     padding-top: 5%;
     color: white;
+    height: auto;
 }
 .first {
     font-size: 3em;
@@ -178,6 +179,7 @@ path {
     color: white;
     padding: 5%;
     font-size: 2em;
+    display: flex;
 }
 .accordion {
     background-color: rgba(0,0,0,0.3);
@@ -260,3 +262,18 @@ path {
             font-size: 1.7em;
         }
   }
+
+  .register {
+    display: block;
+    height: auto;
+    width: 15%;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+.register:hover {
+    background: rgba(0,0,0,0.6);
+    border-bottom: 2px inset #8cc63f;
+    cursor: pointer;
+}
