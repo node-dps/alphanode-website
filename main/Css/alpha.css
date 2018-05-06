@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #284360;
+    background: linear-gradient(45deg,#003366, #284360);
     overflow-x: hidden;
     font-family: "Abel";
 }
@@ -17,7 +17,7 @@ a {
     width: 100%;
     background: url('maclab.jpg');
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .land {
@@ -261,11 +261,15 @@ path {
         .accordion {
             font-size: 1.7em;
         }
+        #googleMap {
+            display: none;
+        }
   }
 
   .register {
     display: block;
     height: auto;
+    font-size: 1.3em;
     width: 15%;
     background: rgba(0,0,0,0.3);
     color: white;
