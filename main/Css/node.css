@@ -261,6 +261,7 @@ span {
     color: #003366;
     background-attachment: fixed;
     padding: 5%;
+    padding-bottom: 2%;
     font-size: 20px;
     line-height: 30px;
 }
@@ -386,3 +387,60 @@ a:hover {
       text-align: left;
     }
   }
+.icon1_ {
+    background: url('icontwit.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon2_ {
+    background: url('beh.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon3_ {
+    background: url('face.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon4_ {
+    background: url('med.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon_ {
+    display: inline-block;
+    align-content: center;
+    transform: scale(0.4);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    clip-path: circle(50%);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon1_:hover{
+    background: url('icontwith.png');
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon2_:hover{
+    background: url('behh.png');
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon3_:hover{
+    background: url('faceh.png');
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon4_:hover{
+    background: url('medh.png');
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
