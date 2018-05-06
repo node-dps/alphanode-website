@@ -67,6 +67,13 @@ body {
     background-position-y: 50%;
     background-position-x: 10%;
     background-attachment: scroll;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.4s;
+}
+.first:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0px);
 }
 .second {
     height: auto;

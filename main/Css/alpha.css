@@ -264,16 +264,19 @@ path {
         #googleMap {
             display: none;
         }
+        .register {
+            width
+        }
   }
 
   .register {
     display: block;
     height: auto;
     font-size: 1.3em;
-    width: 15%;
+    width: 150px;
     background: rgba(0,0,0,0.3);
     color: white;
-    padding: 2%;
+    padding: 3%;
     text-align: center;
 }
 .register:hover {
