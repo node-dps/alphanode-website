@@ -27,7 +27,7 @@ body{
 }
 
 #particles-js{
-    background: #284360;
+    background: linear-gradient(-45deg,#284360,#003366);
     background-attachment: fixed;
     height: 100vh;
 }
