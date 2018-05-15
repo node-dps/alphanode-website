@@ -11,6 +11,7 @@ body {
     overflow-y: scroll;
     height: 100%;
     width: 100%;
+    color: #363636;
 }
 .card1 {
     background: white;
@@ -179,4 +180,11 @@ p:not(.p2) {
 }
 .highlight {
     color: #003366;
+}
+#active {
+    background: white;
+    color: #003366;
+}
+@media only screen and (max-width: 400px) {
+
 }
