@@ -5,7 +5,7 @@ body{
 }
 
 .btext{
-    color: #f9f3f4;
+    color: #ecf0f1;
     position: absolute;
     text-align: center;
     top: 40%;
@@ -27,7 +27,7 @@ body{
 }
 
 #particles-js{
-    background: #003366;
+    background: linear-gradient(-45deg,#284360,#003366);
     background-attachment: fixed;
     height: 100vh;
 }
@@ -40,6 +40,7 @@ body{
     margin-bottom: -2%;
     align-content: center;
     margin-top: -5%;
+    display: grid;
 }
 .cont {
     display: inline-block;
@@ -64,7 +65,18 @@ body{
         margin-left: -7%;
     }
 }
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
+    .image {
+        transform: scale(0.5);
+        align-content: center;
+        margin-left: -20%;
+        margin-bottom: -25%;
+    }
+    .content1 {
+        font-size: 12px;
+    }
+}
+/*@media only screen and (max-width: 480px) {
     .content1 {
         font-size: 14px;
         font-weight: bold;
