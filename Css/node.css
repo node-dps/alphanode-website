@@ -61,24 +61,17 @@ body {
     padding: 10px;
     height: 500px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.3);
-    background: url('nodelogotrimmed.png') #f2f2f2;
+    background: url('nodelogotrimmed.png');
     background-size: 30%;
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 10%;
     background-attachment: scroll;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: 0.4s;
-}
-.first:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0px);
 }
 .second {
     height: auto;
     padding: 20px;
-    background: linear-gradient(45deg,#003366, #284360);
+    background: #003366;
     padding-bottom: 5%;
 }
 .white {
@@ -191,24 +184,6 @@ body {
     background-size: contain;
     background-position: center;
 }
-#twelve {
-    background: url('nig11.jpeg');
-    background-size: 120%;
-    background-position: center;
-    background-position-y: 15%;
-    background-position-x: 3%;
-}
-#fourt {
-    background: url('nig13.jpeg');
-    background-size: 120%;
-    background-position: center;
-}
-#fivet {
-    background: url('nig14.jpeg');
-    background-size: 150%;
-    background-position: center;
-    background-position-y: 8%;
-}
 .badge:hover {
     filter: none;
 }
@@ -257,11 +232,10 @@ span {
 }
 .footer {
     height: auto;
-    background: #f2f2f2;
+    background: white;
     color: #003366;
     background-attachment: fixed;
     padding: 5%;
-    padding-bottom: 2%;
     font-size: 20px;
     line-height: 30px;
 }
@@ -319,7 +293,7 @@ a:hover {
 }
 .nav {
     padding: 0%;
-    color: #f2f2f2;
+    color: white;
     align-content: center;
     height: 50px;
 }
@@ -332,7 +306,7 @@ a:hover {
     font-size: 20px;
 }
 .nav-item:hover {
-    background: #f2f2f2;
+    background: white;
     color: #003366;
     width: auto;
     cursor: pointer;
@@ -342,7 +316,7 @@ a:hover {
 }
 @media only screen and (max-width: 480px) {
     .content1 {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
     }
     .first h1 {
@@ -357,7 +331,7 @@ a:hover {
     }
 }
 #active {
-    background: #f2f2f2;
+    background: white;
     color: #003366;
 }
 .nav .icon {
@@ -387,60 +361,3 @@ a:hover {
       text-align: left;
     }
   }
-.icon1_ {
-    background: url('icontwit.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon2_ {
-    background: url('beh.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon3_ {
-    background: url('face.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon4_ {
-    background: url('med.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon_ {
-    display: inline-block;
-    align-content: center;
-    transform: scale(0.4);
-    height: 100px;
-    width: 100px;
-    background-size: contain;
-    clip-path: circle(50%);
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon1_:hover{
-    background: url('icontwith.png');
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon2_:hover{
-    background: url('behh.png');
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon3_:hover{
-    background: url('faceh.png');
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon4_:hover{
-    background: url('medh.png');
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-}
