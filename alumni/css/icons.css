@@ -1,39 +1,33 @@
 :root{
 	--menu-w: 20px;
 	--menu-h: 2px;
-	--menu-m: 5px;
+	--menu-m: 2.5px;
 	--color: rgba(248,248,248,0.9);
 }
 
 span[class*=menu]:before{
 	display: block;
-	content: '';
 	position: relative;
-	top: -10px;
-	left: calc(var(--menu-m)*(-1));
-	height: var(--menu-h);
-	width: var(--menu-w);
-	margin: var(--menu-m);
+	top: calc(var(--menu-m)*-2);
+	content: '';
+	width: 100%;
+	height: 100%;
 	background-color: var(--color);
 }
 span[class*=menu]{
 	display: block;
-	position: relative;
 	width: var(--menu-w);
 	height: var(--menu-h);
-	margin: calc(var(--menu-m) + 20px);
 	background-color: var(--color);
-	transition: 0s;
+	transition: all 0s;
 }
 span[class*=menu]:after{
 	display: block;
-	content: '';
 	position: relative;
-	left: calc(var(--menu-m)*(-1));
-	bottom: 7px;
-	height: var(--menu-h);
-	width: var(--menu-w);
-	margin: var(--menu-m);
+	bottom: calc(var(--menu-m)*-2 + var(--menu-h));
+	content: '';
+	width: 100%;
+	height: 100%;
 	background-color: var(--color);
 }
 
@@ -43,7 +37,7 @@ div#down-arrow{
 	display: block;
 	position: absolute;
 	left: 50%;
-	bottom: 100px;
+	bottom: calc(10vh + 20px);
 	opacity: 0;
 	transform: translateX(-50%);
 	transition: all 0.5s 0.2s;

@@ -114,21 +114,18 @@ path {
 
 .events {
     display: block;
-    padding: 15%;
-    padding-top: 5%;
+    padding: 5% 15%;
     color: #f2f2f2;
     height: auto;
 }
 .first {
-    font-size: 3em;
+    margin-top: 5%; 
+    font-size: 38px;
 }
 @media only screen and (max-width: 480px) {
     .content1 {
         font-size: 14px;
         font-weight: bold;
-    }
-    .first h1 {
-        font-size: 30px;
     }
     .text {
         font-size: 27px;
@@ -147,14 +144,45 @@ path {
     color: #003366;
 }
 .footer {
-    height: auto;
-    background: #101010;
-    color: white;
-    padding: 5%;
-    font-size: 2em;
     display: flex;
+    height: auto;
+    padding: 5%;
+    color: white;
+    font-size: 1.2em;
+    background: #101010;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+#googleMap{
+    display: block;
+    width: 50%;
+    min-width: 200px;
+    max-width: 500px;
+    height: 300px;
+}
+@media only screen and (max-width: 900px){
+
+    .contacts{
+        text-align: center;
+    }
+
+    .footer{
+        padding: 15% 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #googleMap{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+}
+
 .accordion {
+    position: relative;
     background-color: rgba(0,0,0,0.3);
     cursor: pointer;
     padding: 3%;
@@ -164,29 +192,53 @@ path {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 3em;
+    font-size: 30px;
     transition: 0.4s;
+    border-radius: 3px 3px 0 0;
+}
+
+.accordion span{
+    color: #8cc63f;
 }
 
 .active, .accordion:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
-.accordion:after {
-    content: '\002B';
+.accordion:before{
+    position: absolute;
+    right: 3%;
+    content: '\2212';
     color: #fff;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+}
+.accordion:after, .accordion.active:after{
+    position: absolute;
+    right: 3%;
+    content: '\2212';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 1px;
+    margin-bottom: 2px;
+    transition: all 0.2s;
+    transform: rotate(-90deg);
+}
+.accordion.active:after{
+    transform: rotate(0deg);
+    transform-origin: center;
 }
 
-.active:after {
-    content: "\2212";
+em{
+    display: inline-block;
+    font-style: normal;
+    margin-bottom: 20px;
 }
 
 .panel {
-    padding: 0 2%;
-    font-size: 1.5em;
+    padding: 0 4%;
+    font-size: 1.3em;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -209,10 +261,11 @@ path {
 @media screen and (max-width: 400px) {
 
     .accordion {
-        font-size: 1.7em;
+        padding: 15px;
+        font-size: 20px;
     }
-     #googleMap {
-        display: none;
+    .accordion:before, .accordion:after, .accordion.active:after{
+        right: 15px;
     }
 
 }
@@ -221,12 +274,16 @@ path {
     display: flex;
     height: auto;
     font-size: 1.3em;
-    width: 150px;
+    width: 200px;
     background: rgba(0,0,0,0.3);
     color: white;
-    padding: 3%;
+    padding: 15px 0;
     text-align: center;
-    border: 0px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 3px;
 }
 .register:hover {
     background: rgba(0,0,0,0.6);
@@ -274,9 +331,6 @@ path {
     color: grey;
     text-decoration: none;
     cursor: pointer;
-}
-.green {
-    color: #8cc63f;
 }
 form {
     margin: 0;

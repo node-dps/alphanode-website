@@ -18,8 +18,8 @@
 	--bg-navbar: transparent;
 	--fg-navbar: var(--white);
 
-	--navbar-h: 10vh;
-	--max-h: 70px;
+	--navbar-h: 70px;
+	--link-h: 10vh;
 
 	--nav-border-b-width: 0px;
 
@@ -65,12 +65,12 @@ nav.navigation, div#overlay, nav#sidewalk, nav.links{
 	user-select: none;
 }
 
-a[class*="nav-item"], a.login, div#cross, div#menu, nav.navigation{
+/*a[class*="nav-item"], a.login, div#cross, div#menu, nav.navigation{
 	max-height: var(--max-h);
 }
 a.login, div#menu, nav.navigation{
 	min-height: 64px;
-}
+}*/
 
 
 nav.navigation{
@@ -106,7 +106,8 @@ nav#sidewalk{
 a[class*="nav-item"]{
 	display: flex;
 	width: 100%;
-	height: var(--navbar-h);
+	height: var(--link-h);
+	max-height: var(--navbar-h);
 	font-size: 90%;
 	justify-content: center;
 	align-items: center;
@@ -137,10 +138,11 @@ div#overlay{
 
 
 div#menu{
+	display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: flex;
+	width: var(--navbar-h);
 	height: var(--navbar-h);
 	justify-content: center;
 	align-items: center;
@@ -148,8 +150,8 @@ div#menu{
 }
 div[id*="cross"]{
 	display: flex;
-	width: 50vw;
-	height: 10vh;
+	width: 100%;
+	height: var(--navbar-h);
 	font-size: 250%;
 	color: var(--cross);
 	justify-content: flex-end;
@@ -168,16 +170,6 @@ span.cross:hover{
 	color: var(--cross-2);
 }
 
-img[class*="logo"]{cursor: pointer;}
-
-img.logo1{
-	display: block;
-	height: 8vh;
-	width: 8vh;
-}
-
-img.logo2{display: none;}
-
 nav.links{
 	display: flex;
 	width: 100%;
@@ -192,10 +184,6 @@ nav.links{
 @media only screen and (min-width: 1025px){
 
 	div#menu, div#cross{display: none;}
-
-	nav.navigation, nav.navigation *{
-		max-height: var(--max-h);
-	}
 
 	div#overlay{
 		display: block;
@@ -224,7 +212,7 @@ nav.links{
 		align-items: center;
 	}
 	a[class*="nav-item"]{
-		height: 100%;
+		height: var(--navbar-h);
 		width: 10vw;
 		font-size: 105%;
 	}
@@ -234,21 +222,10 @@ nav.links{
 		color: var(--nav-item-hover-color2);
 	}
 
-	img.logo1{display: none;}
-
-	img.logo2{
-		display: block;
-		height: 8vh;
-		width: 8vh;
-		margin: 0 1vw;
-		margin-right: auto;
-	}
-
 	nav.links{
 		width: auto;
-		height: 10vh;
-		padding-right: 8vw;
-		border-bottom: var(--nav-border-b-width) solid var(--white);
+		height: var(--navbar-h);
+		padding: 0;
 		flex-direction: row;
 	}
 
@@ -269,10 +246,6 @@ nav.links{
 
 	nav#sidewalk{
 		width: var(--sidewalk-width-s);
-	}
-	div#cross{
-		width: var(--sidewalk-width-s);
-		justify-content: flex-start;
 	}
 	a[class*="nav-item"]{
 		height: calc(100vh/7);

@@ -50,6 +50,9 @@ div.icon img.icon{
 	height: 50px;
 	border-radius: 360px;
 }
+div.icon p{
+	display: none;
+}
 
 [class*="footer"] span{
 	color: #8cc63f;
@@ -62,6 +65,9 @@ div.icon img.icon{
 	}
 	div.icon:hover img.icon{
 		margin-left: 20px;
+	}
+	div.icon:hover p{
+		display: inline-block;
 	}
 
 	div.icon p{
