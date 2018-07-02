@@ -248,7 +248,7 @@ nav.links{
 		width: var(--sidewalk-width-s);
 	}
 	a[class*="nav-item"]{
-		height: calc(100vh/5);
+		height: calc(100vh/7);
 		max-height: var(--max-h);
 	}
 }
