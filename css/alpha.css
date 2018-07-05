@@ -75,14 +75,6 @@ path {
         stroke-dashoffset: 0;
     }
 }
-@keyframes move {
-    from {
-        transform: translate(-50%, -50%);
-    }
-    to {
-        transform: translate(-90%, -50%)
-    }
-}
 @keyframes show {
     from {
         opacity: 0;
