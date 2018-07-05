@@ -23,7 +23,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
-    animation: move 2s forwards 4s;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
