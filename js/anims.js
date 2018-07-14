@@ -38,4 +38,3 @@ function onLoadAnimations(){
     }
 
 }
-console.log("jainil ajmera")
