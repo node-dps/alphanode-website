@@ -369,17 +369,3 @@ img.sponsor + img.sponsor{
     position: relative;
     font-size: 3em;
 }
-.sponsorsh::before, .sponsorsh::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: -21vw;
-    width: 20vw;
-    height: 2px;
-    background-color: white;
-}
-.sponsorsh::after{
-    left: auto;
-    right: -21vw;
-}
