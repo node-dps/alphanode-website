@@ -335,3 +335,37 @@ em{
 form {
     margin: 0;
 }
+
+.sponsors{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img.sponsor{
+    display: inline-block;
+    width: 30%;
+    min-width: 200px;
+    margin-bottom: 40px;
+}
+img.sponsor + img.sponsor{
+    margin-left: 40px;
+}
+@media only screen and (max-width: 650px){
+    .sponsors{
+        width: 90%;
+    }
+    img.sponsor + img.sponsor{
+        margin-left: 0px;
+    }
+}
+
+.sponsorsh{
+    display: inline;
+    position: relative;
+    font-size: 3em;
+}
