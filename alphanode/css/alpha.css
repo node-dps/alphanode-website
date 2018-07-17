@@ -344,12 +344,19 @@ form {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+
+    box-shadow:
+    inset 0px 11px 15px -10px rgba(0,0,0,0.3),
+    inset 0px -11px 15px -10px rgba(0,0,0,0.3); 
 }
 
 img.sponsor{
     display: inline-block;
-    width: 30%;
+    width: 20%;
     min-width: 200px;
+    max-width: 500px;
     margin-bottom: 40px;
 }
 img.sponsor + img.sponsor{
@@ -365,7 +372,8 @@ img.sponsor + img.sponsor{
 }
 
 .sponsorsh{
-    display: inline;
+    display: block;
+    width: 100%;
     position: relative;
-    font-size: 3em;
+    font-size: 2.8em;
 }
