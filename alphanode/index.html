@@ -9,16 +9,24 @@
     <title>Alphanode</title>
 	<style type="text/css">
 		.sen{
-			filter: grayscale();
+			
 			height: 20%;
 			width: 20%;
 			transition: all ease 0.4s;
 			padding: 1% 1% 1% 1%;
+			
+			filter: grayscale(60%);
+		}
+		.sen:nth-of-type(1){
+			opacity: .5;
+			transform: translateY(-30%);
+
 		}
 		.sen:hover{
-			filter:grayscale(0); 
-			height: 21%;
-			width: 21%;
+			filter: grayscale(0);
+			opacity: 1;
+			height: 20.5%;
+			width: 20.5%;
 
 		}
 		.sen:nth-of-type(2){
@@ -110,7 +118,7 @@
 </div>
 <div class="sponsors" style="background: rgba(0,0,0,.1);padding: 2% 2% 2% 2%;">
 	<center><h1 style="color: white;">Our Sponsors</h1> <br>
-	 <br><img src="assets/sen.png" style="margin-top: 0%;" class="sen">
+	 <br><img src="assets/sen.svg" style="margin-top: 0%;" class="sen">
 	 <img src="assets/ebix.png" style="margin-top: 0%;" class="sen"></center>
 </div>
 <div class="events">
