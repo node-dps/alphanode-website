@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +33,35 @@
 		.sen:nth-of-type(2){
 			height: 10vh;
 			width: auto;
+		}
+		.b1 {
+    background: rgba(0,0,0,0);
+    border: solid 2px white;
+    transition: all ease 0.3s;
+}
+}
+		.b1{
+			background: rgba(0,0,0,0); border:solid 2px white;
+			transition: all ease 0.3s;
+		}
+		.b1:hover{
+			background-color: white;
+		color: white;
+		}
+		.b1:hover > .hh{
+			animation: move 2s infinite;
+
+		}
+		@keyframes move{
+			0%{
+				transform: translateX(0%);
+			}
+			50%{
+				transform: translateX(50%);
+			}
+			100%{
+				transform: translateX(0%);
+			}
 		}
 	</style>
 	<!-- links -->
@@ -120,6 +150,9 @@
 	<center><h1 style="color: white;">Our Sponsors</h1> <br>
 	 <br><img src="assets/sen.svg" style="margin-top: 0%;" class="sen">
 	 <img src="assets/ebix.png" style="margin-top: 0%;" class="sen"></center>
+<div class="btn b1"  style=" background: rgba(0,0,0,0);
+    border: solid 2px white;
+    transition: all ease 0.3s;"><a href="https://nodeclub.xyz/results/" style="color: white;">View Results</a></div>
 </div>
 <div class="events">
 
