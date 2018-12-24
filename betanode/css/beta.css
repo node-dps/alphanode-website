@@ -294,7 +294,8 @@ a[href=""]::after{
     background-color: var(--green);
     color: white;
     transition: color 0s, all 0.2s;
-    outline: none
+    outline: none;
+    font-size: inherit;
 }
 .events a[href=""]::after{
     border-radius: 5px;
