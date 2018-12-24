@@ -295,12 +295,12 @@ a[href=""]::after{
     color: white;
     transition: color 0s, all 0.2s;
     outline: none;
-    font-size: inherit;
 }
 .events a[href=""]::after{
     border-radius: 5px;
     width: calc(100% - 20px);
     height: calc(100% - 40px);
+    font-size: 1.5rem;
 }
 a[href=""]:hover{
     background-color: transparent;
