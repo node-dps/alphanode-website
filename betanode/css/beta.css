@@ -275,6 +275,40 @@ section.links p{
     box-shadow: 0 4px 10px 1px rgba(0,0,0,0.1);
 }
 
+a[href=""]{
+    position: relative;
+    outline: none
+}
+a[href=""]::after{
+    content: 'Coming Soon';
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: white;
+    transition: color 0s, all 0.2s;
+    outline: none
+}
+.events a[href=""]::after{
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    height: calc(100% - 40px);
+}
+a[href=""]:hover{
+    background-color: transparent;
+    color: transparent;
+}
+a[href=""]:hover::after{
+    opacity: 1;
+}
+
 @media only screen and (max-width: 1025px){
     section.links{
         grid-template-columns: 100%;
@@ -296,15 +330,18 @@ section.links p{
     .landing h1{
         font-size: 5rem;
     }
+    .landing .hi{
+        font-size: 2rem;
+    }
 
-    .about{
+    section.about{
         grid-template-columns: 100%;
         grid-template-rows: auto auto;
         grid-template-areas: 
             "heading"
             "desc"
         ;
-        padding: 100px 10% !important;
+        padding: 100px 10%;
     }
 
     .about img{
