@@ -296,11 +296,11 @@ section.links p{
     box-shadow: 0 4px 10px 1px rgba(0,0,0,0.1);
 }
 
-a[href=""]{
+a.null{
     position: relative;
     outline: none
 }
-a[href=""]::after{
+a.null::after{
     content: 'Coming Soon';
     display: flex;
     position: absolute;
@@ -317,17 +317,17 @@ a[href=""]::after{
     transition: color 0s, all 0.2s;
     outline: none;
 }
-.events a[href=""]::after{
+.events a.null::after{
     border-radius: 5px;
     width: calc(100% - 20px);
     height: calc(100% - 40px);
     font-size: 1.5rem;
 }
-a[href=""]:hover{
+a.null:hover{
     background-color: transparent;
     color: transparent;
 }
-a[href=""]:hover::after{
+a.null:hover::after{
     opacity: 1;
 }
 
