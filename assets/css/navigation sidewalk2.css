@@ -60,6 +60,19 @@ body *{transition: all 0.2s;}
 
 a{text-decoration: none; color: inherit;}
 
+.vv {
+	border-bottom: solid 2px rgba(0, 0, 0, 0);
+	transition: all ease 0.4s;
+}
+
+.vv:hover {
+	border-bottom: solid 2px black;
+}
+
+.footer2 .vv:hover{
+	border-color: white;
+}
+
 nav.navigation, div#overlay, nav#sidewalk, nav.links{
 	transition: all 0.2s, color 0s;
 	user-select: none;
@@ -227,6 +240,9 @@ nav.links{
 		height: var(--navbar-h);
 		padding: 0;
 		flex-direction: row;
+	}
+	div.followus .icon:hover{
+		background-color: var(--white);
 	}
 
 }

@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    height: 300vh;
     margin: 0;
     padding: 0;
     color: #363636;
@@ -88,6 +89,9 @@ p.designation{
     font-size: 110%;
     font-weight: bold;
     border-bottom: 2px solid transparent;
+}
+.content a + a{
+    margin-left: 20px;
 }
 .content a:hover{
     border-bottom: 2px solid rgb(10, 55, 100);

@@ -17,7 +17,7 @@ body{
 .btext-text{
     position: absolute;
     left: 50%;
-    bottom: 8%;
+    bottom: 10vh;
     width: 80%;
     color: #ecf0f1;
     text-align: center;
@@ -76,9 +76,8 @@ body{
 @media only screen and (min-height: 1024px){
 
     .btext-text{
-        top: 50%;
+        bottom: 10vh;
         left: 50%;
-        bottom: auto;
         transform: translate(-50%, -30%);
     }
 
@@ -87,8 +86,7 @@ body{
 @media only screen and (min-width: 1000px){
     
     .btext-text{
-        bottom: 20%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 0);
     }
 
 }
@@ -137,9 +135,6 @@ body{
     .image{
         top: 45%;
     }
-    .btext-text{
-        bottom: 10%;
-    }
     .title{
         font-size: 35px;
     }
@@ -151,15 +146,27 @@ body{
 
 @media only screen and (max-width: 550px){
 
-    .btext-text{
-        bottom: 15%;
-    }
     .title{
         font-size: 35px;
         margin-bottom: 20px;
     }
     .image{
         width: 70%;
+    }
+
+}
+
+
+@media only screen and (max-height: 500px){
+
+    .image{
+        top: 40px;
+        width: 100px;
+    }
+    .btext-text{
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 60%);
     }
 
 }

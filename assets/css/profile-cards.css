@@ -8,7 +8,7 @@
 }
 .profile-container > *{
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -26,12 +26,13 @@ hr.nimp{
     border-color: transparent;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     hr.nimp{border-color: #ecf0f1;margin: 50px 0;}
 }
 
 [class*=badge]{
     display: flex;
+    position: relative;
     width: 220px;
     height: 220px;
     margin: 10px;
@@ -44,9 +45,11 @@ hr.nimp{
     box-shadow: 
     0 1px 3px rgba(0,0,0,0.3), 
     0 1px 2px rgba(0,0,0,0.3);
+    border-radius: 8px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .badge1{
     border-color: #8cc63f;
@@ -74,4 +77,45 @@ hr.nimp{
 .desig{
     text-align: center;
     font-size: 90%;
+}
+
+.visit{
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 0 0 2px 2px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+
+    color: var(--blue);
+    font-weight: bold;
+    background-color: #ecf0f1;
+
+    overflow: hidden;
+}
+
+.pres .visit, .sec .visit{
+    color: white;
+    font-weight: normal;
+    background-color: #8cc63f;
+}
+
+[class*=badge]:hover .visit{
+    height: 30px;
+    animation: anim 0.2s ease-out;
+}
+
+@keyframes anim{
+    0%{
+        letter-spacing: 5px;
+    }
+    100%{
+        letter-spacing: 0px;
+    }
 }
