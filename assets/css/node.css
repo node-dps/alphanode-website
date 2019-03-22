@@ -66,6 +66,10 @@ body {
 
 @media only screen and (max-width: 900px){
 
+    .cntnt{
+        justify-content: center;
+    }
+
     .cntnt .img{
         display: none;
         width: 40vw;
