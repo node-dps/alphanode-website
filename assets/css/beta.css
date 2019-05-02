@@ -1,3 +1,7 @@
+:root{
+    --green: #8cc63f;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +24,92 @@ div.container{
 }
 span.green{
     color: var(--green);
+    transition: all 0s;
 }
+h1.heading{
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+p.desc{
+    font-size: 1.2rem;
+}
+ul{
+    display: flex;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+li{
+    display: block;
+    position: relative;
+    margin: 5px 0;
+}
+li::before{
+    content: '\276F';
+    position: absolute;
+    left: -30px;
+    padding: 0 10px;
+}
+dl{
+    margin: 30px;
+}
+dt{
+    font-size: 2rem;
+    margin: 60px 0 0 0;
+}
+dt:not(:first-child){
+    margin: 100px 0 0 0;
+}
+dt .byline{
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+}
+dd{
+    font-size: 1.2rem;
+    padding-left: 3%;
+    margin: 20px 0;
+}
+[class*=register]{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translate(-50%, 0);
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: all 0.2s;
+    opacity: 0.5;
+    z-index: 1;
+}
+[class*=register]:hover{
+    color: #ffffff;
+    background-color: #22114f;
+    border-color: #22114f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 1;
+}
+
+.register2{
+    position: relative;
+    bottom: 0;
+    margin: 30px 0;
+    color: var(--white);
+    background-color: var(--blue);
+    border-color: var(--blue);
+    opacity: 1;
+}
+
+
+
+
+
 
 
 
@@ -30,7 +119,7 @@ span.green{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/beta.1.svg');
+    background-image: url('../images/icons/beta.1.svg');
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
@@ -55,7 +144,7 @@ span.green{
 .landing .hi{
     position: absolute;
     left: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: normal;
     opacity: 0;
     transition: opacity 0.4s 0.2s, left 0.4s 0s ease;
@@ -63,11 +152,12 @@ span.green{
 .landing::after {
 	content: '‹';
 	display: block;
-	position: absolute;
+    position: absolute;
 	bottom: 100px;
 	transform: rotate(-90deg);
 	font-size: 4rem;
-	font-weight: 10;
+    font-weight: 10;
+    padding-bottom: 11px;
     opacity: 0;
     transition: opacity 0.4s 0.3s;
 	animation: anim ease-in-out 2s infinite;
@@ -90,10 +180,10 @@ span.green{
 
 .about{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto 30%;
     grid-template-rows: auto auto;
     grid-template-areas: 
-        "heading heading"
+        "heading logo"
         "desc logo"
     ;
     background-color: var(--white);
@@ -104,10 +194,15 @@ span.green{
     grid-area: heading;
     font-size: 3rem;
     margin: 0 0 60px 0;
-    text-align: center;
+    text-align: left;
+}
+.about .desc{
+    grid-area: desc;
+}
+.about .desc h2{
+    margin: 20px 0;
 }
 .about p{
-    grid-area: desc;
     font-size: 1.2rem;
 }
 .about img{
@@ -117,6 +212,34 @@ span.green{
     left: 50%;
     transform: translate(-50%, -50%);
     height: 200px;
+}
+
+section.details{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10% 16%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--black);
+    background-color: #eee;
+}
+.details .heading{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+.details .subheading{
+    margin-top: 150px;
+}
+.details h2{
+    font-size: 2rem;
+    margin: 40px 0 0px 0;
+}
+.details ul{
+    margin: 30px 0;
 }
 
 .events{
@@ -373,7 +496,7 @@ a.null:hover::after{
         font-size: 5rem;
     }
     .landing .hi{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     section.about{
@@ -383,10 +506,27 @@ a.null:hover::after{
             "heading"
             "desc"
         ;
-        padding: 100px 10%;
+        padding: 100px 16%;
     }
 
+    .about h1{
+        margin: 15px 0;
+    }
+    .about p{
+        margin: 10px 0;
+    }
     .about img{
         display: none;
+    }
+    .about h2{
+        margin: 20px 0;
+    }
+
+    dl{
+        margin: 0;
+    }
+    dd{
+        margin: 50px 0;
+        padding: 0;
     }
 }
