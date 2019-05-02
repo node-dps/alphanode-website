@@ -36,7 +36,7 @@ span.menu2:before, span.menu2, span.menu2:after{background-color: var(--blue)}
 div#down-arrow{
 	display: block;
 	position: absolute;
-	left: 50%;
+	left: calc(50% - 5px);
 	bottom: calc(10vh + 20px);
 	opacity: 0;
 	transform: translateX(-50%);
